@@ -1,0 +1,68 @@
+version: 1
+name: Orange Boosted Bootstrap
+tagline: Zbrandowany, dostępny fork Bootstrapa 5 od Orange – biblioteka komponentów UI dla produktów cyfrowych.
+description: "Orange Boosted Bootstrap to oficjalny fork frameworka Bootstrap 5 rozwijany przez firmę Orange SA, dostarczający dostępną (WCAG), zbrandowaną i ergonomiczną bibliotekę komponentów UI dla produktów Orange. Projekt zachowuje kompatybilność architektoniczną z Bootstrapem (SCSS + JavaScript oparty o Popper.js), jednocześnie wprowadzając własny design system: kolory i typografię marki Orange (m.in. czcionkę Helvetica Neue), rozszerzone komponenty (np. Orange Navbar, Stepped Process, Sticker, Title Bars, Local Navigation, Back to Top, Tags) oraz wzmocnione wymagania dostępności cyfrowej.\\n\\nRepozytorium zawiera kompletny zestaw źródeł SCSS (katalog scss/), moduły JavaScript dla komponentów interaktywnych (katalog js/src/ wraz z testami jednostkowymi Karma/Jasmine i testami integracyjnymi Rollup), a także rozbudowaną dokumentację budowaną w Astro (katalog site/) publikowaną pod boosted.orange.com. Proces budowania wykorzystuje Sass, PostCSS/Autoprefixer, Rollup i Terser do generowania wersji standardowej, bundlowanej (z Popper.js), zminifikowanej oraz RTL (prawo-do-lewa) plików CSS/JS. Projekt jest dystrybuowany wieloma kanałami: npm, Yarn, Bun, Composer i NuGet.\\n\\nJakość i zgodność projektu są pilnowane przez rozbudowany zestaw narzędzi CI/CD (GitHub Actions): testy JS (Karma), testy wizualne (Percy), testy dostępności (pa11y-ci), walidacja HTML (vnu-jar), lintowanie CSS/JS (stylelint, ESLint), kontrola rozmiaru bundle (bundlewatch) oraz testy cross-browserowe (BrowserStack). Aktualna wersja to 5.3.7, licencjonowana na MIT, z aktywnym rozwojem na gałęzi głównej (Boosted 5) oraz osobną gałęzią v4-dev dla starszej wersji 4."
+features:
+  - name: Komponenty UI Bootstrap 5 (zbrandowane)
+    description: Pełny zestaw komponentów Bootstrap 5 (przyciski, formularze, karty, modale, nawigacja, karuzela, dropdowny, akordeon, tooltips, popovers itd.) przystosowanych do identyfikacji wizualnej Orange.
+    status: done
+  - name: Komponenty własne Orange
+    description: "Dodatkowe komponenty spoza standardowego Bootstrapa: Orange Navbar, Stepped Process, Sticker, Title Bars, Local Navigation, Back to Top, Tags, Quantity Selector."
+    status: done
+  - name: Wsparcie dla dostępności (a11y)
+    description: Komponenty projektowane zgodnie z wytycznymi WCAG, testowane automatycznie za pomocą pa11y-ci oraz dodatku Storybook addon-a11y.
+    status: done
+  - name: Wsparcie RTL (prawo-do-lewa)
+    description: Generowanie osobnych wariantów CSS (boosted.rtl.css) dla języków pisanych od prawej do lewej przy użyciu RTLCSS.
+    status: done
+  - name: System budowania i dystrybucji
+    description: Kompilacja SCSS i JS (Sass, Rollup, PostCSS, Terser) do wersji standardowej, minifikowanej i bundlowanej, publikowanej w npm, Composer i NuGet.
+    status: done
+  - name: Dokumentacja Astro + Storybook
+    description: Strona dokumentacji budowana w Astro (boosted.orange.com) wraz z katalogiem komponentów w Storybook oraz wyszukiwarką Algolia DocSearch.
+    status: done
+  - name: Testy automatyczne i CI
+    description: Testy jednostkowe/integracyjne JS (Karma, Jasmine), testy wizualne (Percy), testy SCSS (sass-true), lintowanie i kontrola rozmiaru bundle w GitHub Actions.
+    status: done
+  - name: Rozwój Boosted 4 (branch v4-dev)
+    description: Utrzymanie starszej gałęzi wersji 4 równolegle do głównego rozwoju wersji 5.
+    status: wip
+stack:
+  languages:
+    - JavaScript
+    - SCSS/Sass
+    - TypeScript
+    - HTML
+    - MDX
+  frameworks:
+    - Bootstrap 5 (fork)
+    - Astro
+    - Popper.js
+    - jQuery (testy)
+    - Storybook
+    - Karma/Jasmine
+  infra:
+    - GitHub Actions
+    - npm/Rollup/Terser build pipeline
+    - PostCSS/Autoprefixer/RTLCSS
+    - Percy (wizualne regresje)
+    - BrowserStack
+    - Netlify (deploy previews)
+    - pa11y-ci (a11y)
+links: {}
+status: active
+tags:
+  - bootstrap
+  - css-framework
+  - design-system
+  - orange
+  - accessibility
+  - scss
+  - javascript
+  - ui-components
+  - open-source
+  - rtl
+ai:
+  generated_at: 2026-07-21T00:12:00.111Z
+  source_commit: d452208f91c7fed92a9eceb129f5fe3cfaf80d75
+locked: []
